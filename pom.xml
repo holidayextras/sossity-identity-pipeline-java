@@ -30,19 +30,10 @@
 
   <repositories>
     <repository>
-      <id>s3.site</id>
-      <url>s3://com.22acacia/site</url>
-    </repository>
-    <repository>
-      <id>s3.release</id>
-      <url>s3://com.22acacia/releases</url>
-    </repository>
-    <repository>
-      <id>s3.snapshot</id>
-      <url>s3://com.22acacia/snapshot</url>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
     </repository>
   </repositories>
-
 
 
   <build>
@@ -110,9 +101,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.acacia</groupId>
-      <artifactId>angleddream</artifactId>
-      <version>0.1-ALPHA</version>
+      <groupId>com.github.22Acacia</groupId>
+      <artifactId>angled-dream</artifactId>
+      <version>-SNAPSHOT</version>
     </dependency>
 
     <dependency>
