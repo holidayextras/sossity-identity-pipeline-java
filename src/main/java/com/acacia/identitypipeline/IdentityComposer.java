@@ -11,17 +11,21 @@ import java.util.List;
 @AutoService(AbstractTransformComposer.class)
 public class IdentityComposer extends AbstractTransformComposer {
 
-    List<AbstractTransform> transforms = new ArrayList<>();
+    List<AbstractTransform> transforms = null;
 
 
     public IdentityComposer(){
         super();
-        transforms.add(new IdentityPipeline());
 
     }
 
     @Override
     public List<AbstractTransform> getOrderedTransforms() {
+        if(transforms == null) {
+            transforms = new ArrayList<>();
+            transforms.add(new IdentityPipeline());
+        }
+
         return transforms;
     }
 }
